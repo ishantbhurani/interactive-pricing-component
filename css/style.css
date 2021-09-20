@@ -33,8 +33,19 @@ body {
   color: var(--clr-grayish-blue);
 }
 
+/* Global */
 h1 {
   color: var(--clr-dark-desaturated-blue);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header */
