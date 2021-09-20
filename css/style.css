@@ -23,6 +23,9 @@
   --clr-light-grayish-blue-2: hsl(223, 50%, 87%); /* Toggle Background */
   --clr-grayish-blue: hsl(225, 20%, 60%); /* Text */
   --clr-dark-desaturated-blue: hsl(227, 35%, 25%); /* Text & CTA Background */
+
+  /* range slider */
+  --slider-value: 0%;
 }
 
 body {
@@ -153,7 +156,7 @@ header p {
 }
 
 .track-inner {
-  width: 0;
+  width: var(--slider-value);
   height: 100%;
   background: var(--clr-soft-cyan);
 }
@@ -163,8 +166,8 @@ header p {
   height: 2.4em;
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
+  left: var(--slider-value);
+  transform: translate(calc(0% - var(--slider-value)), -50%);
   background: var(--clr-strong-cyan) url(../images/icon-slider.svg) no-repeat
     center;
   border-radius: 50%;
