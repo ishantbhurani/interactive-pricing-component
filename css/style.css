@@ -116,6 +116,51 @@ header p {
   color: var(--clr-dark-desaturated-blue);
 }
 
+/* Range Slider */
+.range-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+#pageviews-slider {
+  width: 100%;
+  margin-top: 5em;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.track {
+  width: 100%;
+  height: 0.45em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--clr-light-grayish-blue);
+  border-radius: 1em;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.track-inner {
+  width: 0;
+  height: 100%;
+  background: var(--clr-soft-cyan);
+}
+
+.thumb {
+  width: 2.4em;
+  height: 2.4em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  background: var(--clr-strong-cyan) url(../images/icon-slider.svg) no-repeat
+    center;
+  border-radius: 50%;
+  box-shadow: 0 0.8em 1em 0.5em var(--clr-soft-cyan);
+  pointer-events: none;
+}
+
 /* Card Footer */
 .card-footer {
   display: flex;
