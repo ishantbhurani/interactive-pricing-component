@@ -75,4 +75,43 @@ header p {
   background: var(--clr-white);
   box-shadow: 0 0.6rem 2rem -1rem #999;
   border-radius: 0.6em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.card-header,
+.card-footer {
+  padding: 2.5em;
+}
+
+/* Card Footer */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.card-footer li {
+  font-size: 0.8rem;
+}
+
+.card-footer li:not(:last-of-type) {
+  margin-bottom: 0.5em;
+}
+
+.card-footer li::before {
+  content: url(../images/icon-check.svg);
+  margin-right: 0.8em;
+}
+
+.btn {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--clr-pale-blue);
+  background: var(--clr-dark-desaturated-blue);
+  padding: 0.9em 3.5em;
+  border-radius: 5em;
+  cursor: pointer;
 }
