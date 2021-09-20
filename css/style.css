@@ -32,3 +32,25 @@ body {
   background: var(--clr-very-pale-blue) url(../images/bg-pattern.svg) no-repeat;
   color: var(--clr-grayish-blue);
 }
+
+h1 {
+  color: var(--clr-dark-desaturated-blue);
+}
+
+/* Header */
+header {
+  width: max-content;
+  margin: auto;
+  padding: 6em 0 5em;
+  text-align: center;
+  background: url(../images/pattern-circles.svg) no-repeat center;
+}
+
+header h1 {
+  font-size: 1.7rem;
+}
+
+header p {
+  font-size: 0.94rem;
+  margin-top: 0.5em;
+}
