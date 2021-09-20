@@ -129,6 +129,11 @@ header p {
   margin-bottom: 2.5em;
 }
 
+.range-wrapper:focus-within .thumb,
+#pageviews-slider:hover ~ .thumb {
+  opacity: 0.7;
+}
+
 #pageviews-slider {
   width: 100%;
   opacity: 0;
@@ -165,6 +170,7 @@ header p {
   border-radius: 50%;
   box-shadow: 0 0.8em 1em 0.5em var(--clr-soft-cyan);
   pointer-events: none;
+  transition: 0.2s;
 }
 
 /* Billing Preference */
@@ -194,6 +200,11 @@ header p {
   display: inline-block;
   width: 2.4em;
   height: 1.25em;
+}
+
+.switch:hover .slider,
+.switch:focus-within .slider {
+  background: var(--clr-soft-cyan);
 }
 
 .switch input {
@@ -259,5 +270,11 @@ header p {
   background: var(--clr-dark-desaturated-blue);
   padding: 0.9em 3.5em;
   border-radius: 5em;
+  transition: 0.2s;
   cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--clr-white);
 }
