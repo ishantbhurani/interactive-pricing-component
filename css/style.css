@@ -54,3 +54,14 @@ header p {
   font-size: 0.94rem;
   margin-top: 0.5em;
 }
+
+/* Card */
+.card {
+  width: 90%;
+  max-width: 500px;
+  min-height: 380px;
+  margin: auto;
+  background: var(--clr-white);
+  box-shadow: 0 0.6rem 2rem -1rem #999;
+  border-radius: 0.6em;
+}
