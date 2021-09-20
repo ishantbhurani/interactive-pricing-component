@@ -29,6 +29,6 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "Manrope", sans-serif;
-  background-color: var(--clr-very-pale-blue);
+  background: var(--clr-very-pale-blue) url(../images/bg-pattern.svg) no-repeat;
   color: var(--clr-grayish-blue);
 }
