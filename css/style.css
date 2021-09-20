@@ -85,6 +85,37 @@ header p {
   padding: 2.5em;
 }
 
+/* Card Header */
+.card-header {
+  border-bottom: 1px solid #eee;
+}
+
+/* Plan Details */
+.plan-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pageviews {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.price span {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--clr-dark-desaturated-blue);
+}
+
 /* Card Footer */
 .card-footer {
   display: flex;
