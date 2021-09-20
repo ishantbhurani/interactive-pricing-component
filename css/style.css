@@ -17,7 +17,7 @@
   --clr-pale-blue: hsl(226, 100%, 87%); /* CTA Text */
 
   /* Neutral */
-  --clr-white: hsl (0, 0%, 100%); /* Pricing Component Background */
+  --clr-white: hsl(0, 0%, 100%); /* Pricing Component Background */
   --clr-very-pale-blue: hsl(230, 100%, 99%); /* Main Background */
   --clr-light-grayish-blue: hsl(224, 65%, 95%); /* Empty Slider Bar */
   --clr-light-grayish-blue-2: hsl(223, 50%, 87%); /* Toggle Background */
