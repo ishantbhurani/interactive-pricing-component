@@ -78,14 +78,11 @@ header p {
 .card {
   width: 90%;
   max-width: 500px;
-  min-height: 380px;
   margin: auto;
+  margin-bottom: 5em;
   background: var(--clr-white);
   box-shadow: 0 0.6rem 2rem -1rem #999;
   border-radius: 0.6em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr;
 }
 
 .card-header,
