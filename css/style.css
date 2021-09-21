@@ -25,7 +25,7 @@
   --clr-dark-desaturated-blue: hsl(227, 35%, 25%); /* Text & CTA Background */
 
   /* range slider */
-  --slider-value: 0%;
+  --slider-value: 50%;
 }
 
 body {
