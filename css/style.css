@@ -59,9 +59,14 @@ a {
   font-weight: bold;
 }
 
+.mobile {
+  display: none;
+}
+
 /* Header */
 header {
   width: max-content;
+  max-width: 85%;
   margin: auto;
   padding: 6em 0 5em;
   text-align: center;
@@ -280,4 +285,38 @@ header p {
 .btn:hover,
 .btn:focus {
   color: var(--clr-white);
+}
+
+@media screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+  header {
+    padding-bottom: 3em;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .plan-details {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  .billing {
+    margin: 0;
+    gap: 0.8em;
+    text-align: center;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
