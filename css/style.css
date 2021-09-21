@@ -283,7 +283,7 @@ header p {
   border-radius: 5em;
   transition: 0.2s;
   cursor: pointer;
-  outline: transparent;
+  outline: none;
 }
 
 .btn:hover,
