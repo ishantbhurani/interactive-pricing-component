@@ -146,6 +146,7 @@ header p {
   width: 100%;
   opacity: 0;
   cursor: pointer;
+  outline: transparent;
 }
 
 .track {
@@ -220,6 +221,7 @@ header p {
   opacity: 0;
   width: 0;
   height: 0;
+  outline: transparent;
 }
 
 .slider {
@@ -281,6 +283,7 @@ header p {
   border-radius: 5em;
   transition: 0.2s;
   cursor: pointer;
+  outline: transparent;
 }
 
 .btn:hover,
