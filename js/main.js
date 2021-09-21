@@ -1,6 +1,7 @@
 const root = document.documentElement;
 const pageviewsSlider = document.getElementById("pageviews-slider");
 const planDetails = document.querySelector(".plan-details");
+const cbYearlyBilling = document.getElementById("yearly-billing");
 
 const priceArray = [
   { pageviews: "10k", price: "$8.00" },
@@ -10,10 +11,22 @@ const priceArray = [
   { pageviews: "1M", price: "$36.00" },
 ];
 
+let hasYearlyBilling = cbYearlyBilling.checked;
+let priceArrayItem = priceArray[2];
+
+function updatePrice() {
+  let price = Number(priceArrayItem.price.slice(1));
+  price = (hasYearlyBilling ? price - (price * 25) / 100 : price).toFixed(2);
+
+  planDetails.innerHTML = `
+    <p class="pageviews">${priceArrayItem.pageviews} pageviews</p>
+    <p class="price"><span>$${price}</span> / month</p>
+  `;
+}
+
 function updateSlider(value) {
   root.style.setProperty("--slider-value", value + "%");
 
-  let priceArrayItem = priceArray[0];
   switch (value) {
     case "25":
       priceArrayItem = priceArray[1];
@@ -31,10 +44,12 @@ function updateSlider(value) {
       priceArrayItem = priceArray[0];
   }
 
-  planDetails.innerHTML = `
-    <p class="pageviews">${priceArrayItem.pageviews} pageviews</p>
-    <p class="price"><span>${priceArrayItem.price}</span> / month</p>
-  `;
+  updatePrice();
 }
 
 pageviewsSlider.oninput = (e) => updateSlider(e.target.value);
+
+cbYearlyBilling.addEventListener("change", function () {
+  hasYearlyBilling = this.checked;
+  updatePrice();
+});
