@@ -316,6 +316,10 @@ header p {
     text-align: center;
   }
 
+  .slider::before {
+    top: 0.15em;
+  }
+
   .card-footer {
     flex-direction: column;
     text-align: center;
