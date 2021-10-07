@@ -95,6 +95,11 @@ E.g.
 - Semantic HTML5 markup
 - Flexbox
 
+### What I learned
+- Creating custom range slider with custom styled thumb
+- Creating custom toggle switch
+- Creating custom image-bullets for list items
+
 ## Author
 
 - Frontend Mentor - [@ishantbhurani](https://www.frontendmentor.io/profile/ishantbhurani)
