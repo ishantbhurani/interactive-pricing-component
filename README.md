@@ -125,6 +125,10 @@ li::before {
 }
 ```
 
+### Useful resources
+- [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) - This helped me create Toggle switch
+- [CSS Tricks](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/) - This helped me understand how to style cross-browser compatible range inputs
+
 ## Author
 
 - Frontend Mentor - [@ishantbhurani](https://www.frontendmentor.io/profile/ishantbhurani)
