@@ -97,8 +97,33 @@ E.g.
 
 ### What I learned
 - Creating custom range slider with custom styled thumb
+
+```html
+<div class="range-wrapper">
+  <input type="range" />
+  <div class="track">
+    <div class="track-inner"></div>
+  </div>
+  <div class="thumb"></div>
+</div>
+```
+
 - Creating custom toggle switch
+
+```html
+<label class="switch">
+  <input type="checkbox" />
+  <span class="slider"></span>
+</label>
+```
+
 - Creating custom image-bullets for list items
+
+```css
+li::before {
+  content: url(../images/icon-check.svg);
+}
+```
 
 ## Author
 
